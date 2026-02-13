@@ -1,0 +1,152 @@
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  align-items: start;   /* 🔥 THIS IS THE FIX */
+}
+
+
+.admin-container {
+  padding: 20px;
+}
+
+.order-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status {
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.status.placed { background: #fff3cd; color: #856404; }
+.status.shipped { background: #d1ecf1; color: #0c5460; }
+.status.delivered { background: #d4edda; color: #155724; }
+.status.cancelled { background: #f8d7da; color: #721c24; }
+
+.customer-details p {
+  margin: 5px 0;
+}
+
+.items-section {
+  margin-top: 10px;
+}
+
+.item-row {
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.status-update {
+  margin-top: 10px;
+}
+
+.admin-order-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.admin-order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-items {
+  margin-top: 10px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.admin-item-row {
+  margin-bottom: 5px;
+}
+
+.admin-status-update {
+  margin-top: 15px;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status-badge.placed {
+  background: orange;
+}
+
+.status-badge.shipped {
+  background: blue;
+}
+
+.status-badge.delivered {
+  background: green;
+}
+
+.status-badge.cancelled {
+  background: red;
+}
+.admin-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.admin-form input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.admin-form button {
+  padding: 8px 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.admin-product-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.admin-product-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.delete-btn {
+  background: red;
+  color: white;
+}
+
